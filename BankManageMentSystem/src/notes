@@ -1,0 +1,20 @@
+create database bankmanagementsystem;
+use bankmanagementsystem;
+
+create table user(
+id int auto_increment primary key,
+name varchar(255),
+email varchar(255),
+password varchar(255)
+);
+select * from user;
+
+create table Accounts(
+id int primary key auto_increment,
+account_number varchar(100),
+name varchar(100),
+email varchar(100),
+balance decimal(10,2),
+pin int
+);
+select * from Accounts;
